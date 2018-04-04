@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
-#include <sstream>
 
 int GetMaxProduct( std::vector<int> nums ){
     if(nums.size() == 0 ) { return 0; }

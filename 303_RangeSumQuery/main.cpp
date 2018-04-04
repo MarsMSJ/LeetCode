@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+using std::vector;
 
 vector<int> SumVector;
 
@@ -14,10 +15,10 @@ void InitSumVector(const vector<int>& nums) {
 }
 
 int GetRangeSumQuery(size_t i, size_t j, vector<int>& nums){
-	if( i >= V.size() ){
+	if( i >= nums.size() ){
 		return 0;
 	}
-	if( j >= V.size() ){
+	if( j >= nums.size() ){
 		return 0;
 	}
 	if( i > j ) {
